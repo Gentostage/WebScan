@@ -30,7 +30,6 @@ Process of installation is so straight-forward just have to follow the steps bel
 
 <div class="modal fade dalert" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
             <div class="modal-header">
                 Connection Failed
             </div>
@@ -59,7 +58,7 @@ Process of installation is so straight-forward just have to follow the steps bel
 
             var wsImpl = window.WebSocket || window.MozWebSocket;
 
-            window.ws = new wsImpl('ws://localhost:8181/');
+            window.ws = new wsImpl('ws://localhost:3000/');
             ws.onmessage = function (e) {
                 if (typeof e.data === "string") {
                     //IF Received Data is String
